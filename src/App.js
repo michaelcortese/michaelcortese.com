@@ -77,7 +77,7 @@ function App() {
             </div>
             <div className="social-icons">
               <a 
-                href="https://github.com/incognitoatlas" 
+                href="https://github.com/michaelcortese" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="social-icon"
@@ -85,7 +85,7 @@ function App() {
                 <FaGithub />
               </a>
               <a 
-                href="https://linkedin.com/in/YourLinkedInUsername" 
+                href="https://www.linkedin.com/in/michael-cortese-128628335/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="social-icon"
