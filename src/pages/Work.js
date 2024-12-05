@@ -9,12 +9,14 @@ const projects = [
     description: "A tool to visualize the Black-Scholes price of an option as a function of the underlying asset price.",
     github: "https://github.com/michaelcortese/black-scholes-price-visualizer",
     live: "https://black-scholes-price-visualizer.streamlit.app/",
+    technologies: ["Python", "Streamlit", "Plotly", "NumPy"]
   },
   {
-    title: "Example Project",
-    description: "Description of example project. You can write multiple lines about the technologies used and what the project does.",
-    github: "https://github.com/michaelcortese/example-project",
-    live: "https://example-project.com",
+    title: "This Website",
+    description: "This website is a portfolio of my work and a blog about my experiences in software development.",
+    github: "https://github.com/michaelcortese/michaelcortese.com",
+    live: "https://crtse.dev",
+    technologies: ["React", "JavaScript", "CSS"]
   },
 ];
 
@@ -60,6 +62,11 @@ function Work() {
           <div className={`project-card ${direction}`}>
             <h2>{projects[currentIndex].title}</h2>
             <p>{projects[currentIndex].description}</p>
+            <div className="technologies">
+              {projects[currentIndex].technologies.map((tech, index) => (
+                <span key={index} className="tech-tag">{tech}</span>
+              ))}
+            </div>
             <div className="project-links">
               <a href={projects[currentIndex].github} target="_blank" rel="noopener noreferrer">
                 <FaGithub /> GitHub
