@@ -9,8 +9,17 @@ function PageLayout({ title, children }) {
   };
 
   return (
-    <div className="page">
-      <button className="back-button animated-button" onClick={handleBack}>
+    <div className="page" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+      <button 
+        className="back-button animated-button" 
+        onClick={handleBack}
+        style={{ 
+          position: 'fixed',
+          zIndex: 9999,
+          top: '20px',
+          left: '20px'
+        }}
+      >
         Back
       </button>
       <div className="page-content">
