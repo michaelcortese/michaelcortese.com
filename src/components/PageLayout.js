@@ -9,7 +9,12 @@ function PageLayout({ title, children }) {
   };
 
   return (
-    <div className="page" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+    <div className="page" style={{ 
+      minHeight: '100vh', 
+      overflow: 'hidden',
+      position: 'relative',
+      zIndex: 1 
+    }}>
       <button 
         className="back-button animated-button" 
         onClick={handleBack}

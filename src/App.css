@@ -1,11 +1,13 @@
 .App {
-  background-color: #1a1a1a;
+  background: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
 .App.transitioning {
@@ -185,7 +187,7 @@
 }
 
 .page {
-  background-color: #1a1a1a;
+  background: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -194,6 +196,7 @@
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 .page-content {
@@ -258,4 +261,13 @@
 .social-icon:hover {
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* Keep the dark background only on the root level */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  position: relative;
 }
